@@ -1,0 +1,190 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #3faf82;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.center > div {
+  width: 80px;
+  height: 8px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.two {
+  margin: 14px 0;
+}
+
+.reverse .one {
+  -webkit-animation: reverse-one 1s forwards;
+          animation: reverse-one 1s forwards;
+}
+
+.reverse .two {
+  -webkit-animation: reverse-two 1s forwards;
+          animation: reverse-two 1s forwards;
+}
+
+.reverse .three {
+  -webkit-animation: reverse-three 1s forwards;
+          animation: reverse-three 1s forwards;
+}
+
+.animate .one {
+  -webkit-animation: animate-one 1s forwards !important;
+          animation: animate-one 1s forwards !important;
+}
+
+.animate .two {
+  -webkit-animation: animate-two 1s forwards !important;
+          animation: animate-two 1s forwards !important;
+}
+
+.animate .three {
+  -webkit-animation: animate-three 1s forwards !important;
+          animation: animate-three 1s forwards !important;
+}
+
+@-webkit-keyframes animate-one {
+  50% {
+    transform: translateY(22px);
+  }
+  100% {
+    transform: translateY(22px) rotate(45deg);
+  }
+}
+
+@keyframes animate-one {
+  50% {
+    transform: translateY(22px);
+  }
+  100% {
+    transform: translateY(22px) rotate(45deg);
+  }
+}
+@-webkit-keyframes animate-two {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes animate-two {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes animate-three {
+  50% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(-22px) rotate(135deg);
+  }
+}
+@keyframes animate-three {
+  50% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(-22px) rotate(135deg);
+  }
+}
+@-webkit-keyframes reverse-one {
+  0% {
+    transform: translateY(22px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(22px);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+@keyframes reverse-one {
+  0% {
+    transform: translateY(22px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(22px);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+@-webkit-keyframes reverse-two {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes reverse-two {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes reverse-three {
+  0% {
+    transform: translateY(-22px) rotate(135deg);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+@keyframes reverse-three {
+  0% {
+    transform: translateY(-22px) rotate(135deg);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+.no-animation div {
+  -webkit-animation: none !important;
+          animation: none !important;
+}
