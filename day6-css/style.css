@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(to top right, #eebe6c 0%, #ca7c4e 100%);
+  color: #786450;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 299px;
+  background: #fff;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+.center .profile {
+  width: 200px;
+  background: white;
+  text-align: center;
+}
+.center .profile .circle-1 {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 82px;
+  width: 82px;
+  margin: 30px auto 15px auto;
+  border: 1px solid #786450;
+  border-right: 1px solid transparent;
+  transition: 1.5s;
+}
+.center .profile .circle-1 .circle-2 {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76px;
+  width: 76px;
+  border: 1px solid #786450;
+  border-left: 1px solid transparent;
+  transition: 1.5s;
+}
+.center .profile .circle-1 .circle-2 img {
+  display: block;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 1.5s;
+}
+.center .profile .circle-1:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+.center .profile .circle-1:hover .circle-2 {
+  transform: rotate(-720deg);
+}
+.center .profile .circle-1:hover .circle-2 img {
+  transform: rotate(360deg);
+}
+.center .profile .name {
+  font-weight: 600;
+}
+.center .profile .occupation {
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.center .profile .button-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.center .profile .button-container button {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #786450;
+  border-radius: 15px;
+  background: #fff;
+  color: #786450;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.center .content {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.center .content .box {
+  height: 98px;
+  background: #f5e8df;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.center .content .box:hover {
+  background: #e1cfc2;
+}
+.center .content .box .small {
+  text-transform: capitalize;
+  font-size: 11px;
+}
+.center .content .box .big {
+  font-size: 18px;
+  font-weight: 600;
+}
