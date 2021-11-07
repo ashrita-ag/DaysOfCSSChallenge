@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+.frame {
+  position: absolute;
+  background: #42a7a1;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.main {
+  height: 220px;
+  width: 280px;
+  border-radius: 3px;
+  background: #fff;
+}
+.main .heading {
+  height: 60px;
+  background: #f1ba64;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  box-sizing: border-box;
+}
+.main .heading .h-right {
+  text-align: right;
+}
+.main .heading .h-big {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 2px 0;
+}
+.main .heading .h-small {
+  font-weight: 400;
+  font-size: 11px;
+}
+.main .body {
+  height: 160px;
+  padding: 0 10px;
+}
+.main .body .b-1 {
+  height: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.main .body .b-1 .b-1-red {
+  width: 11px;
+  height: 3px;
+  background: #fa7373;
+  margin-top: 5px;
+  border: none;
+}
+.main .body .b-1 .b-1-blue {
+  width: 11px;
+  height: 3px;
+  background: #7ba2ff;
+  margin-left: 25px;
+  margin-top: 5px;
+  border: none;
+}
+.main .body .b-1 .b-1-text {
+  font-size: 9px;
+  color: #606060;
+  margin-left: 6px;
+}
+.main .body .b-2 {
+  height: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main .body .b-2 polyline {
+  stroke: #fa7373;
+}
+.main .body .b-3 {
+  height: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main .body .b-3 polyline {
+  stroke: #7ba2ff;
+}
+.main .body .b-3 svg {
+  margin-top: -40px;
+}
+.main .body .b-4 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  color: #949494;
+  height: 40px;
+  border-bottom: none;
+  line-height: 30px;
+}
+
+polyline {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
