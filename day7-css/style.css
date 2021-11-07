@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #264057;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+  z-index: 2;
+  height: 300px;
+  width: 300px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transition: 0.5s;
+}
+.front.click {
+  transform: translateX(150px);
+}
+
+.header {
+  height: 60px;
+  background: #5f98cd;
+  color: #fff;
+}
+.header .icon {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  width: 29px;
+  height: 15px;
+  cursor: pointer;
+}
+.header .icon:hover .dash-top,
+.header .icon:hover .dash-bottom,
+.header .icon:hover .circle {
+  background: #fff;
+}
+.header .icon .dash-top, .header .icon .dash-bottom {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #b2daff;
+  border-radius: 3px;
+}
+.header .icon .dash-bottom {
+  width: 29px;
+  top: auto;
+  bottom: 0;
+}
+.header .icon .circle {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  top: -2px;
+  right: 0;
+  border-radius: 4px;
+  background: #b2daff;
+}
+.header .text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  line-height: 60px;
+}
+.header .search-icon {
+  position: absolute;
+  font-size: 21px;
+  color: #b2daff;
+  top: 18px;
+  right: 20px;
+  cursor: pointer;
+}
+.header .search-icon:hover {
+  color: #fff;
+}
+
+.search-input {
+  z-index: 3;
+  box-sizing: border-box;
+  position: absolute;
+  top: 13px;
+  right: 55px;
+  width: 230px;
+  height: 34px;
+  border-radius: 17px;
+  border: none;
+  padding: 0 17px;
+  background: #fff;
+  font-size: 13px;
+  color: #666;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(15px);
+  transition: all 0.3s ease-in-out;
+}
+.search-input:focus {
+  outline: none;
+}
+.search-input.active {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.content {
+  height: 240px;
+  background: #fff;
+  position: relative;
+}
+.content .line {
+  position: absolute;
+  top: 0;
+  left: 27px;
+  height: 240px;
+  width: 3px;
+  background: #ebebeb;
+}
+.content .item {
+  position: relative;
+  margin: 0 20px 0 43px;
+  padding: 17px 0;
+  color: #666;
+}
+.content .item:hover {
+  color: #5f98cd;
+  cursor: pointer;
+}
+.content .item .circle {
+  box-sizing: border-box;
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  background: #fff;
+  border: 2px solid #5f98cd;
+  box-shadow: 0 0 0 3px #fff;
+  border-radius: 6px;
+  top: 17px;
+  left: -20px;
+}
+.content .item .time {
+  font-size: 11px;
+}
+.content .item .text {
+  font-size: 15px;
+}
+
+.back {
+  position: absolute;
+  width: 170px;
+  height: 270px;
+  top: 65px;
+  left: 50px;
+  background: #43627d;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(20px);
+}
+.back.click {
+  transform: translateX(0px);
+}
+.back ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+}
+.back ul li {
+  color: #93b2cd;
+  margin: 0;
+  padding: 18px 17px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.back ul li:hover {
+  color: #fff;
+  background: #385269;
+}
+.back ul li span {
+  margin-right: 8px;
+  margin-top: -1px;
+}
